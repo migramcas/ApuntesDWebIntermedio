@@ -1,0 +1,25 @@
+table, th, td{
+	border:1px  solid #235EC0;
+	text-align: left;
+	border-collapse: collapse;  
+}
+
+
+img{
+	width: 150px;
+	height: 150px;
+}
+
+
+/*.elemento1 elemento2:nth-child(#)
+todos los eloementos2 que esténd entro de una clase eloemento1 y que sean el # (n hijo)*/
+
+.miTabla tr:nth-child(1){
+	/*Para cualquier tr que pertenece a miTabkla, se le aplicaran los estilos al primer hijo*/
+	background: #0F4F4B;
+}
+
+
+.miTabla tr:nth-child(2){
+	background: #1964A2;
+}

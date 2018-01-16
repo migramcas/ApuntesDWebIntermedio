@@ -1,0 +1,70 @@
+/*----SELECTORES BASICOS*/
+
+/*Selector de etiquetas*/
+
+body{
+	margin:0px;
+	padding:0px;
+	background:black;
+}
+
+h1{
+	color:white;
+	font-style: italic;
+}
+
+
+/*Selectores descentes*/
+
+ul>li{
+	color:red;
+	text-align: center;
+	display:inline;
+}
+
+
+/*Selector de clase*/
+
+.colores{
+	color:red;
+	padding:0px;
+	margin:15px;
+
+}
+
+
+/*Selectores de ID*/
+#padding{
+	padding:30px;
+
+}
+
+
+/*Pseudoclase*/
+a:hover{
+	color:red;
+}
+
+
+/*---SELECTORES AVANZADOS */
+ol>li{
+	color:blue;
+	background:white;
+
+}
+
+
+/*seelector de adyaca*/
+h1+h3{
+	color: white;
+}
+
+/*selector de atributo*/
+div[class="colores"]{
+	padding:5px;
+}
+
+a[href = "index.html"]{
+	text-align: center;
+	background: red;
+}

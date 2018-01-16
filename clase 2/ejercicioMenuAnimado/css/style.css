@@ -1,0 +1,152 @@
+
+/*Transiciones*/
+
+/*Sintaxis:   transition: <propiedad> <duracion> <velocidad><retraso>;
+<propiedad>: La propiedad que se va a modificar
+<duracion>: cunto tiempo va a tardar en hacer la transición
+<velocidad>: linear, ease, ease-in, ease-out, ease-in-out...;
+<retraso>: cuanto tiempo se va a tardar en iniciar;
+*/
+
+a{
+	text-decoration: none;
+	color:blue;
+	font-size: 12px;
+}
+
+a:hover{
+	color:red;
+	font-size: 99px;
+}
+a{
+	transition: color 0.8s ease-in 0.2;
+	transition: font-size  0.8s ease-out  0.2s;
+}
+/*Los cuatro parámetros que tienen las transiciones pueen ser separados de la siguiente forma:
+transition-property: color;
+transition-duration: 0.8s;
+transition-timing-function: linear;
+transition-delay:0.2s;
+
+EN CASO DE QUE SE TRABAJE CON UN EXPLORADOR EN PARTICULAR:
+	Chhrome, Safari:    webkit-transition: color 0.8 ease-in 0.2s;
+	Mozilla:   -moz-transition: color 0.8 ease-in 0.2s;
+	Opera:   -o-transition: color 0.;8 ease-in 0.2
+	Standard:  transition: color 0.8 ease-in 0.2s;
+
+*/
+/*
+div{
+	width:100px;
+	height: 50px;
+	background-color: #1B5A8E;
+	font-weight: bold;
+	transition: width 1s, background 1s;
+	padding:10px;
+	margin:10px;
+}
+#div1{
+	transition-timing-function: linear;
+}
+#div2{
+	transition-timing-function: ease;
+}
+#div3{
+	transition-timing-function: ease-in;
+}
+#div4{
+	transition-timing-function: ease-out;
+}
+#div5{
+	transition-timing-function: ease-in-out;
+}
+
+
+div:hover{
+	width:500px;
+	background-color: #48B1D3;
+}
+
+
+.transicion{
+	width:100px;
+	height: 100px;
+	background-color: #42EC22;
+	transition:width 2s, height 2s, margin 2s;
+	margin:50px auto 0;
+}
+
+.transicion:hover{
+	width:100%;
+	height: 200px;
+	margin:0 auto;
+}
+*/
+
+
+
+.menu{
+	text-align: center;
+	background: black;
+}
+
+.menu li{
+	display:inline;
+}
+
+.menu a{
+	margin:2%;
+	background-color:  #247FCD;
+	color:white;
+	padding:2%;
+	display:inline-block;
+	text-align: center;
+	width: 140px;
+	border-bottom-width: 3px;
+	border-top-width: : 0px;
+	border-right-width:  0px;
+	border-left-width: 0px;
+	border-style:solid;
+	border-color: black;
+
+}
+
+.menu{
+	display:inline-block;
+	text-align: center;
+		opacity:0;
+	transition: opacity 0.9s ease-in-out;
+	position: relative;
+	
+	top:-1px;
+	height:100%;
+	width:50px;
+	background: black;
+}
+
+.menu li{
+	display:inline-block;
+}
+
+.container{
+	width:100%;
+	height:200px;
+	background-color: blue;
+	position: relative;
+	
+}
+
+.fade-in{
+	opacity:0;
+	transition: opacity 0.9s ease-in-out;
+	position: absolute;
+	right:0;
+	top:-1px;
+	height:100%;
+	width:50px;
+	background: yellow;
+}
+
+.container:hover .menu{
+	opacity:1;
+}
