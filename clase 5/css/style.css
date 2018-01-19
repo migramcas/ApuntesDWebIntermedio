@@ -1,0 +1,37 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  .contact{
+  	font-family: 'Roboto Slab', serif;
+  }
+
+  .margenIzquierdo{
+  	margin-left: 3%;
+  }
+
+  .margenSuperior{
+  	margin-top:3%;
+  }
+
+  #carropromos{
+  	margin-top: 30px;
+  }
+  video{
+  	width: 93%;
+  	height:auto;
+  	margin-top: 20px;
+  	box-shadow: 0px 0px 10px 0px;
+  }
+  #empleados{
+  	margin-top: 10px;
+  }
+
+  .anchura{
+  	width: 50px;
+  }
